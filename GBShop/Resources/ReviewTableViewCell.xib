@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="158" id="KGk-i7-Jjw" customClass="ReviewTableViewCell" customModule="GBShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="157.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Оказалась не такой шумной, как я ожидал, но греется как утюг. Лучше покупайте систему охлаждения с жидким азотом" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zp-zB-sgT">
+                        <rect key="frame" x="16" y="39.5" width="288" height="107.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Иванов Иван" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojP-rN-OqL">
+                        <rect key="frame" x="16" y="11" width="288" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.97935655379999997" blue="0.94030871189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="3Zp-zB-sgT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="A4t-Lc-0vu"/>
+                    <constraint firstItem="3Zp-zB-sgT" firstAttribute="top" secondItem="ojP-rN-OqL" secondAttribute="bottom" constant="8" id="CX9-yI-oiT"/>
+                    <constraint firstItem="ojP-rN-OqL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="CtE-Tu-0vr"/>
+                    <constraint firstItem="3Zp-zB-sgT" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ahC-tI-jek"/>
+                    <constraint firstItem="3Zp-zB-sgT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cnx-b3-oyb"/>
+                    <constraint firstItem="ojP-rN-OqL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="eT3-01-3Jq"/>
+                    <constraint firstItem="ojP-rN-OqL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="g8q-kb-auH"/>
+                    <constraint firstItem="ojP-rN-OqL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="mQr-zi-qJU"/>
+                    <constraint firstItem="ojP-rN-OqL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="osU-Xe-1gL"/>
+                    <constraint firstItem="ojP-rN-OqL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vlx-Fz-1gP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="reviewTextLabel" destination="3Zp-zB-sgT" id="iYx-3N-o2k"/>
+                <outlet property="userNameLabel" destination="ojP-rN-OqL" id="Xct-yD-YED"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="109"/>
+        </tableViewCell>
+    </objects>
+</document>

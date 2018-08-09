@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dim-in-p6c">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basket-->
+        <scene sceneID="Yi2-Fx-u8k">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Basket" id="xA7-74-Sgi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hqt-Xi-K3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4286" y="-73"/>
+        </scene>
+        <!--Описание товара-->
+        <scene sceneID="Axb-4j-xm6">
+            <objects>
+                <viewController id="Z9k-23-JbE" customClass="MerchViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1a2-BQ-h1H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxU-9r-1U7">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2PL-sJ-YkX">
+                                        <rect key="frame" x="8" y="8" width="359" height="690"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Видеокарта Palit (GeForce) GTX TITAN Z" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjE-KF-0Hb">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="63.333333333333336"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="1MP-DM-vRS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DemoImages" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-qd-GD6">
+                                                <rect key="frame" x="0.0" y="79.333333333333343" width="359" height="166"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="166" id="Sfz-Ta-Xqv"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="j6q-HI-Tgc">
+                                                <rect key="frame" x="0.0" y="261.33333333333331" width="359" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBP-IV-1Vd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="KIR-08-mJG"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Отзывы (8)"/>
+                                                        <connections>
+                                                            <segue destination="fjX-lv-2Gb" kind="show" id="1dR-YK-z2A"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdS-Zq-JU3">
+                                                        <rect key="frame" x="109.66666666666667" y="0.0" width="249.33333333333331" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="p1w-mQ-z8R"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="ДОБАВИТЬ за 94 350, ₽"/>
+                                                        <connections>
+                                                            <action selector="addToCardButtonPressed:" destination="Z9k-23-JbE" eventType="touchUpInside" id="kmE-yD-ghN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7An-DW-G3m">
+                                                <rect key="frame" x="0.0" y="307.33333333333326" width="359" height="382.66666666666674"/>
+                                                <string key="text">GeForce® GTX TITAN Z – это настоящий монстр для игр, самая быстрая в мире видеокарта, созданная, чтобы обеспечить мощностью самые экстремальные игровые компьютеры на планете. Оснащенная 5760 ядрами и 12 ГБ памяти, эта видеокарта с двумя GPU позволяет подключать самые мощные мультимониторные системы и сверхмощные компьютеры с 4К мониторами.
+На видеокарте GTX Titan Z установлено сразу два графических процессора Nvidia GeForce, работающих на частоте 876 МГц, поэтому общее количество CUDA-ядер составляет 5760, а для комфортной игры в высоких разрешениях (вплоть до Ultra-HD) имеется 12 гигабайт видеопамяти GDDR5. GTX Titan Z – это мощная видеокарта, обеспечивающая беспрецедентный уровень производительности</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2PL-sJ-YkX" firstAttribute="height" secondItem="AxU-9r-1U7" secondAttribute="height" id="Dfh-ge-YFu"/>
+                                    <constraint firstItem="2PL-sJ-YkX" firstAttribute="width" secondItem="AxU-9r-1U7" secondAttribute="width" constant="-16" id="GLw-Bt-ynq"/>
+                                    <constraint firstAttribute="trailing" secondItem="2PL-sJ-YkX" secondAttribute="trailing" constant="8" id="iof-om-5BC"/>
+                                    <constraint firstAttribute="bottom" secondItem="2PL-sJ-YkX" secondAttribute="bottom" constant="8" id="onJ-FP-glS"/>
+                                    <constraint firstItem="2PL-sJ-YkX" firstAttribute="top" secondItem="AxU-9r-1U7" secondAttribute="top" constant="8" id="xFb-7v-94X"/>
+                                    <constraint firstItem="2PL-sJ-YkX" firstAttribute="leading" secondItem="AxU-9r-1U7" secondAttribute="leading" constant="8" id="ya2-mZ-VkV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93450081350000003" green="0.92346023190000004" blue="0.84568787950000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AxU-9r-1U7" firstAttribute="width" secondItem="dn9-0d-5mg" secondAttribute="width" id="K0s-lA-bqf"/>
+                            <constraint firstItem="AxU-9r-1U7" firstAttribute="bottom" secondItem="dn9-0d-5mg" secondAttribute="bottom" id="Qlh-qk-Khc"/>
+                            <constraint firstItem="AxU-9r-1U7" firstAttribute="top" secondItem="dn9-0d-5mg" secondAttribute="top" id="TUx-MA-CRa"/>
+                            <constraint firstItem="AxU-9r-1U7" firstAttribute="leading" secondItem="1a2-BQ-h1H" secondAttribute="leading" id="tHL-GS-G6R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dn9-0d-5mg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Описание товара" id="ggC-mw-tzu">
+                        <barButtonItem key="backBarButtonItem" title="О товаре" id="uOx-XC-eC1"/>
+                        <barButtonItem key="leftBarButtonItem" title="Закрыть" id="Njf-xG-gsM">
+                            <connections>
+                                <segue destination="PKn-Ln-9Zv" kind="unwind" unwindAction="unwindFromMerchViewControllerWithSegue:" id="mhf-AY-r0o"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Корзина 🛒" id="Qus-oo-eg3">
+                            <connections>
+                                <segue destination="xA7-74-Sgi" kind="presentation" identifier="FromMerchToBasketSegue" id="y75-vN-2JJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMy-QY-fgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PKn-Ln-9Zv" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3372" y="182.51231527093597"/>
+        </scene>
+        <!--Отзывы-->
+        <scene sceneID="5HJ-ZI-QkS">
+            <objects>
+                <viewController id="fjX-lv-2Gb" customClass="ReviewsViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wXy-vh-A8z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Видеокарта Palit (GeForce) GTX TITAN Z" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbM-yK-gNv">
+                                <rect key="frame" x="8" y="96" width="359" height="63.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-An-zzP">
+                                <rect key="frame" x="0.0" y="167" width="375" height="611"/>
+                                <color key="backgroundColor" red="0.93450081350000003" green="0.92346023190000004" blue="0.84568787950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReviewCellIdentifier" rowHeight="118" id="jrk-0F-CoW">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="118"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jrk-0F-CoW" id="AGR-m3-AVG" customClass="ReviewTableViewCell" customModule="GBShop" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117.66666666666667"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="1" green="0.97935655379999997" blue="0.94030871189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93450081350000003" green="0.92346023190000004" blue="0.84568787950000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QbM-yK-gNv" firstAttribute="leading" secondItem="ass-4q-3uF" secondAttribute="leading" constant="8" id="3Hj-G8-oqQ"/>
+                            <constraint firstItem="ass-4q-3uF" firstAttribute="trailing" secondItem="Xkb-An-zzP" secondAttribute="trailing" id="3PL-bc-m3H"/>
+                            <constraint firstItem="Xkb-An-zzP" firstAttribute="top" secondItem="QbM-yK-gNv" secondAttribute="bottom" constant="8" id="AJd-tv-EAp"/>
+                            <constraint firstItem="ass-4q-3uF" firstAttribute="trailing" secondItem="QbM-yK-gNv" secondAttribute="trailing" constant="8" id="Gt6-B2-nmi"/>
+                            <constraint firstItem="Xkb-An-zzP" firstAttribute="bottom" secondItem="ass-4q-3uF" secondAttribute="bottom" id="HZI-cn-bDx"/>
+                            <constraint firstItem="QbM-yK-gNv" firstAttribute="top" secondItem="ass-4q-3uF" secondAttribute="top" constant="8" id="fAo-mz-9yz"/>
+                            <constraint firstItem="Xkb-An-zzP" firstAttribute="leading" secondItem="ass-4q-3uF" secondAttribute="leading" id="oAc-8f-yO3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ass-4q-3uF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Отзывы" id="ejI-U8-7Cu">
+                        <barButtonItem key="rightBarButtonItem" title="Добавить" systemItem="add" id="tCZ-E8-lbV">
+                            <connections>
+                                <action selector="addReviewButtonPressed:" destination="fjX-lv-2Gb" id="J1q-yk-JP4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="reviewsTableView" destination="Xkb-An-zzP" id="hKN-zz-6gt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oel-UD-Q0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4298" y="562"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nL1-Zc-DGe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dim-in-p6c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bDf-lk-f3r">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z9k-23-JbE" kind="relationship" relationship="rootViewController" id="FIO-rE-q1R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgQ-gw-O6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2429.5999999999999" y="182.51231527093597"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DemoImages" width="270" height="165"/>
+    </resources>
+</document>
